@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="base" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="forward">/forward.jsp</result>
+		</global-results>
+	</package>
+	<package name="root" namespace="/" extends="base">
+		<action name="frontUserAction_*" class="frontUserAction"
+			method="{1}">
+			<result name="input">/user_login.jsp</result>
+			<result name="register">/jsp/front/user/user_register.jsp</result>
+			<result name="invalid.token">/jsp/front/user/user_register.jsp</result>
+		</action>
+		<action name="frontIndexAction_*" class="frontIndexAction" method="{1}">
+		    <result name="index">/index.jsp</result>
+		</action>
+		<action name="backAdminAction_*" class="backAdminAction" method="{1}">
+		</action>
+	</package>
+	<package name="back" namespace="/jsp/back" extends="base">
+		<action name="backTypeAction_*" class="backTypeAction" method="{1}">
+			<result name="list">/jsp/back/type/type_list.jsp</result>
+			<result name="update">/jsp/back/type/type_update.jsp</result>
+		</action>
+		<action name="backNoticeAction_*" class="backNoticeAction" method="{1}">
+		    <result name="list">/jsp/back/notice/notice_list.jsp</result>
+		    <result name="update">/jsp/back/notice/notice_update.jsp</result>
+		</action>
+		<action name="backQuestionAction_*" class="backQuestionAction" method="{1}">
+		    <result name="list">/jsp/back/question/question_list.jsp</result>
+		    <result name="show">/jsp/back/question/question_show.jsp</result>
+		</action>
+		<action name="backAnswerAction_*" class="backAnswerAction" method="{1}">
+		    <result name="list">/jsp/back/answer/answer_list.jsp</result>
+		</action>
+		<action name="backUserAction_*" class="backUserAction" method="{1}">
+		    <result name="list">/jsp/back/user/user_list.jsp</result>
+		</action>
+		
+	</package>
+	<package name="front" namespace="/jsp/front" extends="base">
+		<action name="frontQuestionAction_*" class="frontQuestionAction"
+			method="{1}">
+			<result name="list">/jsp/front/question/question_list.jsp</result>
+			<result name="insert">/jsp/front/question/question_write.jsp</result>
+			<result name="show">/jsp/front/question/question_show.jsp</result>
+		    <result name="search">/jsp/front/question/question_search.jsp</result>
+		</action>
+		<action name="frontAnswerAction_*" class="frontAnswerAction"
+			method="{1}">
+		</action>
+		<action name="frontUserCenterAction_*" class="frontUserCenterAction"
+			method="{1}">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">5120000000</param>
+				<param name="allowedTypes">image/jpeg,image/jpg,image/gif,image/png,image/bmp</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name="index">/jsp/front/usercenter/user_index.jsp</result>
+			<result name="points">/jsp/front/usercenter/user_points.jsp</result>
+			<result name="update">/jsp/front/usercenter/user_info.jsp</result>
+			<result name="list">/jsp/front/usercenter/user_question.jsp</result>
+		</action>
+		<action name="frontNoticeAction_*" class="frontNoticeAction" method="{1}">
+		     <result name="list">/jsp/front/notice/notice_list.jsp</result>
+		     <result name="show">/jsp/front/notice/notice_show.jsp</result>
+		</action>
+	</package>
+</struts>    

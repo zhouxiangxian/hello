@@ -1,0 +1,106 @@
+.uc_left_nav{
+		width:230px; height:435px; background:url(../images/user_center_left_nav_bg.jpg) left top no-repeat; margin-bottom:15px;
+	}
+.uc_left_nav_title{
+		font-size:14px; color:#FFF; font-weight:bold; text-decoration:none; text-align:left; height:41px;
+	}
+.uc_left_nav_content{
+		width:190px; padding:0px 25px 0px 15px;
+	}
+.uc_left_nav_content td{
+		padding:10px 0px; border-bottom:1px #ccc dashed;
+	}
+.uc_left_nav_link01 td{
+		padding:0px 0px  10px 0px;
+	}
+.uc_index_content{
+		text-align:center;
+	}
+.uc_body_title{
+		width:760px; height:auto; margin-bottom:10px;
+		}
+.uc_index_content .uc_index_content_box{
+		width:180px; text-align:left; height:100px; padding-top:100px; padding-left:220px; background:url(../images/user_center_index_body_img.jpg) left top no-repeat; margin:auto; line-height:20px; font-size:14px; color:#F60; font-weight:normal; text-decoration:none;
+	}
+
+.uc_body_title ul li{
+		width:760px; padding:4px 0px; text-align:left; font-size:14px; color:#666; font-weight:normal; text-decoration:none;
+	}
+.uc_info_tab{
+		margin-top:50px;
+	}
+.uc_info_tab_title{
+		height:30px; text-align:left; font-size:14px; color:#FFF; font-weight:bold; text-decoration:none; background:url(../images/uc_userinfo_tab_top.jpg) left top no-repeat;
+	}
+.uc_info_tab_content{
+		border-left:1px #09c solid; border-right:1px #09c solid; padding:5px 5px 0px 5px;
+	}
+.uc_info_tab_content td{
+		padding:10px 0px; text-align:left; font-size:14px; color:#666; font-weight:nomal;
+	}
+.uc_info_input_code{
+		width:150px; border:1px #ccc solid; background:#f5f5f5;
+	}
+.uc_info_select{
+		width:120px;
+	}
+.uc_info_button{
+		width:80px; height:40px; border:none; background:none; cursor:hand; padding:0px; margin:0px;
+	}
+.uc_score_tab_content{
+		border-left:1px #09c solid; border-right:1px #09c solid; padding:5px 5px 0px 5px; text-align:center; height:200px;
+	}
+.uc_score_tab_content td{
+		padding:4px 0px;
+	}
+.uc_changePassInput{
+		width:280px;
+		border:1px #ccc solid;
+		background:#f5f5f5;
+	}
+.pageStyle{
+	font-size:12px;
+	color:#009ccf;
+	fosnt-weight:normal;
+}
+.searchText{
+	width:400px;
+	height:30px;
+	border:1px #ccc solid;
+	background:#f5f5f5;
+	font-size:14px;
+	color:#ccc;
+}
+.pageButton{
+	width:60px;
+	height:25px;
+	border:none;
+	background:none;
+	font-size:12px;
+	color:#009CCF;
+	font-weight:normal;
+	text-decoration:underline;
+	cursor:pointer;
+}
+.split_page_td{
+		font-size:12px;
+		text-align:right;
+	}
+.text_14b_666{
+		font-size:14px; color:#666; font-weight:bold; text-decoration:none;
+	}
+.text_14_999{
+		font-size:14px; color:#999; font-weight:normal; text-decoration:none;
+	}
+a.a_14_blue{
+		font-size:14px; color:#09c; font-weight:normal; text-decoration:none;
+	}
+a.a_14_blue:hover{
+		text-decoration:underline;
+	}
+a.a_12_666{
+		font-size:12px; color:#666; font-weight:normal; text-decoration:none;
+	}
+a.a_12_666:hover{
+		text-decoration:underline;
+	}
